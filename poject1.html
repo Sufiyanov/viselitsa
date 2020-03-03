@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+<head>  
+	<meta charset="UTF-8">  
+	<title>Виселица!</title> 
+</head> 
+<body>  
+<h1>!</h1>  
+<script> 
+
+var words = ["масло", "культиватор", "связь", "чек", "москва", "лев", "ящер", "шар", "прыжок", "мост", "шахта"];
+
+var randomWord = function(words) {
+word = words[Math.floor(Math.random()*words.length)];
+return word;
+}; 
+randomWord(words);
+
+console.log("это слово "+word);
+
+
+var proverka = function(str) {
+if (str===null){
+return alert("вы ничего не ввели");
+} else if (str.length>=2) {
+return alert("вы ввели более 2х символов");
+}
+}; 
+
+var mass = function (word) {
+var secret = [];
+for (var i = 0; i<word.length; i++){
+secret.push("_");
+}
+return secret;
+}
+mass(word);
+
+
+var bukva = prompt("введите символ");
+proverka(bukva);
+	</script> 
+ </body> 
+ </html>
